@@ -1,7 +1,7 @@
 import React from 'react';
 import './navbar.css'
 import Logo from '../../assets/imagens/HomeFlix.png'
-import ButtonLink from '../buttons/buttonLink';
+import Button from '../button/index.js';
 
 
 function Navbar() {
@@ -11,9 +11,9 @@ function Navbar() {
             <a href="/">
                 <img className="Logo" src={Logo}  alt="HomeFlix logo"></img>
             </a>
-            <ButtonLink className="ButtonLink" href="/">
+            <Button as="a" className="ButtonLink" href="/">
                 Novo Video
-            </ButtonLink>
+            </Button>
         </nav>
         </>
     )
